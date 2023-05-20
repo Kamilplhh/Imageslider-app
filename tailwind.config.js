@@ -4,6 +4,8 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
   ],
+  darkMode: 'class',
+  important: true,
   theme: {
     extend: {},
   },
