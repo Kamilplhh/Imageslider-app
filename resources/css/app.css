@@ -5,3 +5,21 @@
 .display-none {
     display: none !important;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+a:hover {
+    text-decoration: none;
+}
+
+.home {
+    text-decoration: 3px underline orange;
+    text-underline-offset: 8px;
+}
+
+.home:hover {
+    text-decoration: 3px underline orange;
+    text-underline-offset: 8px;
+}
