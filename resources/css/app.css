@@ -31,19 +31,17 @@ a:hover {
 }
 
 .bg-block {
+    font-family: "Times New Roman", Times, serif;
     border-radius: 20px;
     height: 396px;
     width: 256px;
     margin-right: 2%;
     box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 1);
+    color: white;
 }
 
-.bg-block-last {
-    border-radius: 20px;
-    height: 396px;
-    width: 256px;
+.last {
     margin-right: -6%;
-    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 1);
 }
 
 
