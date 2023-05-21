@@ -11,8 +11,8 @@
 
     <div class="block h-100 bg-[#ecfdf3]">
         
-    <div class="navbar dark:bg-[#313131] h-16">
-        <div class="absolute top-4 right-12">
+    <div class="navbar dark:bg-[#313131] h-24">
+        <div class="absolute top-8 right-12">
             <a href="" class="home px-5 text-black dark:text-white ">HOME</a>
             <a href="" class="px-5 text-black dark:text-white">HOLIDAYS</a>
             <a href="" class="px-5 text-black dark:text-white">RESERVATIONS</a>

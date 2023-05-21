@@ -24,14 +24,19 @@ a:hover {
     text-underline-offset: 8px;
 }
 
+.navbar {
+    z-index: 2;
+}
+
 .bg-blocks {
     display: flex;
     justify-content: flex-end;
     margin-top: 40vh;
-    z-index: 1;
+    z-index: 2;
 }
 
 .bg-block {
+    position: relative;
     font-family: "Times New Roman", Times, serif;
     border-radius: 20px;
     height: 396px;
@@ -42,7 +47,7 @@ a:hover {
 }
 
 .last {
-    margin-right: -6%;
+    margin-right: -4%;
 }
 
 #first {
@@ -67,20 +72,43 @@ a:hover {
 
 #fifth {
     background-image: url("/images/5.jpg"); 
-
+    background-size: 700px;
 }
 
 .bg-ON{
-    background-image: url("/images/1.jpg");
     position: absolute;
     height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto !important;
     margin-right: 0;
     box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
     border-radius: 0px;
-    z-index: 0;
+    z-index: 0 !important;
     top: 0;
+    right: 0;
+}
+
+.description {
+    position: absolute;
+    margin-left: 5%;
+    bottom: 10%;
+}
+
+.bordertop {
+    width: 10%;
+    border: solid white 1px;
+    margin-bottom: 1%;
+}
+
+.author {
+    margin-bottom: 3%;
+}
+
+.place
+{
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    font-size: 2.5vh;
 }
