@@ -27,7 +27,8 @@ a:hover {
 .bg-blocks {
     display: flex;
     justify-content: flex-end;
-    margin-top: 30vh;
+    margin-top: 40vh;
+    z-index: 1;
 }
 
 .bg-block {
@@ -44,4 +45,42 @@ a:hover {
     margin-right: -6%;
 }
 
+#first {
+    background-image: url("/images/1.jpg");
+    background-size: 700px;
+}
 
+#second {
+    background-image: url("/images/2.jpg");
+    background-size: 300px;
+}
+
+#third {
+    background-image: url("/images/3.jpg");
+    background-size: 300px;
+}
+
+#fourth {
+    background-image: url("/images/4.jpg");
+    background-size: 300px;
+}
+
+#fifth {
+    background-image: url("/images/5.jpg"); 
+
+}
+
+.bg-ON{
+    background-image: url("/images/1.jpg");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+    border-radius: 0px;
+    z-index: 0;
+    top: 0;
+}
