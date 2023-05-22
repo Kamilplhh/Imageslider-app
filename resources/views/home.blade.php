@@ -10,7 +10,7 @@
                 Elizeu Dias • BRASIL
             </div>
             <div class="place-ON">
-                <b>RIO DE JANEIRO</b> 
+                <b>RIO DE JANEIRO</b>
             </div>
             <div class="discover">
                 <i class="fa-solid fa fa-bookmark"></i>
@@ -26,7 +26,7 @@
                 Portuguese Gravity • PORTUGAL
             </div>
             <div class="place">
-                <b>PADRÃO DOS DESCOBRIMENTOS IN BELÉM</b> 
+                <b>PADRÃO DOS DESCOBRIMENTOS IN BELÉM</b>
             </div>
         </div>
 
@@ -69,7 +69,16 @@
     </div>
 
     <div class="navigation">
-        
+        <div class="circle">
+            <i class="fa-solid fa-xl fa-less-than"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-xl fa-greater-than"></i>
+        </div>
+        <div class="line"></div>
+        <div class="text">
+            01
+        </div>
     </div>
 </div>
 
