@@ -3,32 +3,36 @@
 
 @section('content')
 <div class="bg-blocks">
-    <div class="bg-block bg-black bg-ON" id="first">
-        <div class="description">
-            <div class="bordertop"></div>
-            <div class="author">
+    <div class="bg-ON" id="first">
+        <div class="description-ON">
+            <div class="bordertop-ON"></div>
+            <div class="author-ON">
                 Elizeu Dias • BRASIL
             </div>
-            <div class="place">
-                RIO DE JANEIRO
+            <div class="place-ON">
+                <b>RIO DE JANEIRO</b> 
+            </div>
+            <div class="discover">
+                <i class="fa-solid fa fa-bookmark"></i>
+                <p>DISCOVER LOCATION</p>
             </div>
         </div>
     </div>
 
-    <div class="bg-block bg-black" id="second">
+    <div class="bg-block" id="second">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">
                 Portuguese Gravity • PORTUGAL
             </div>
             <div class="place">
-                PADRÃO DOS DESCOBRIMENTOS IN BELÉM
+                <b>PADRÃO DOS DESCOBRIMENTOS IN BELÉM</b> 
             </div>
         </div>
 
     </div>
 
-    <div class="bg-block bg-black" id="third">
+    <div class="bg-block" id="third">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">
@@ -40,7 +44,7 @@
         </div>
     </div>
 
-    <div class="bg-block bg-black" id="fourth">
+    <div class="bg-block" id="fourth">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">
@@ -52,7 +56,7 @@
         </div>
     </div>
 
-    <div class="bg-block last bg-black" id="fifth">
+    <div class="bg-block last" id="fifth">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">
@@ -62,6 +66,10 @@
                 WASHINGTON MONUMENT
             </div>
         </div>
+    </div>
+
+    <div class="navigation">
+        
     </div>
 </div>
 
