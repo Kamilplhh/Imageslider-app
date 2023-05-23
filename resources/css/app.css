@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
 
 a {
     font-size: 1rem;
+    transition: 0.1s ease-in;
 }
 
 a:hover {
@@ -40,6 +41,8 @@ a:hover {
     z-index: 2;
     text-shadow: 2px 2px 1px black;
     color: white;
+    width: 50%;
+    margin-left: 50%;
 }
 
 .bg-block {
@@ -50,11 +53,11 @@ a:hover {
     margin-right: 2%;
     box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 1);
     cursor: pointer;
+    transition: .3s ease-in;
 }
 
 .bg-block:hover {
     transform: scale(1.1);
-    transition: 0.3s ease-in-out;
 }
 
 .last {
@@ -63,42 +66,48 @@ a:hover {
 
 #first {
     background-image: url("/images/1.jpg");
-    background-size: 700px;
+    background-size: contain;
 }
 
 #second {
     background-image: url("/images/2.jpg");
-    background-size: 300px;
+    background-size: cover;
 }
 
 #third {
     background-image: url("/images/3.jpg");
-    background-size: 300px;
+    background-size: cover;
 }
 
 #fourth {
     background-image: url("/images/4.jpg");
-    background-size: 300px;
+    background-size: cover;
 }
 
 #fifth {
     background-image: url("/images/5.jpg");
-    background-size: 700px;
+    background-size: cover;
+}
+
+.bg-center {
+    z-index: 0 !important;
+    transform: translate(-5vh, -5vw);
+    transition: all 0.1s linear;
 }
 
 .bg-ON {
+    transition: .7s linear;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    width: 100% !important;
+    height: 100% !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto !important;
     margin-right: 0;
-    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+    box-shadow: none;
     border-radius: 0px;
-    z-index: 0 !important;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .description {
@@ -166,11 +175,11 @@ a:hover {
     border-radius: 50%;
     background: orange;
     cursor: pointer;
+    transition: all 0.2s ease-out;
 }
 
 .fa-bookmark:hover {
     transform: scale(1.2);
-    transition: all 0.2s ease-out;
     color: rgb(241, 227, 17);
 }
 
@@ -183,12 +192,12 @@ a:hover {
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.2s ease-out;
 }
 
 .discover p:hover {
     transform: scale(1.2);
-    opacity: 1;
-    transition: all 0.2s ease-out;
+    opacity: 1; 
     background: white;
     color: rgba(0, 0, 0, 0.3);
     text-shadow: 0px 0px 0px black;
@@ -216,13 +225,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.1s ease-in;
 }
 
 .circle:hover {
     transform: scale(1.08);
     background-color: white;
     color: black;
-    transition: 0.1s ease-in;
     text-shadow: none;
 }
 
@@ -236,5 +245,5 @@ a:hover {
 
 .text {
     font-size: 5rem;
-    margin-left: 5%;
+    margin-left: 3%;
 }

@@ -1,5 +1,7 @@
 import '../css/app.css'; 
 import "@fortawesome/fontawesome-free/css/all.css";
+import $ from 'jquery';
+window.$ = $;
 
 const sunIcon = document.querySelector(".sun");
 const moonIcon = document.querySelector(".moon");
@@ -39,6 +41,19 @@ sunIcon.addEventListener("click", () => {
 
 moonIcon.addEventListener("click", () => {
     themeSwitch();
+    display()
 });
 
 themeCheck();
+
+const block = document.getElementById("second");
+
+
+function display() {
+    block.classList.toggle("bg-center");
+    setTimeout(function() {
+        block.classList.remove("bg-center");
+        block.classList.remove("bg-block");
+        block.classList.toggle("bg-ON");
+      }, 200);
+}

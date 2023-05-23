@@ -29,7 +29,6 @@
                 <b>PADRÃO DOS DESCOBRIMENTOS IN BELÉM</b>
             </div>
         </div>
-
     </div>
 
     <div class="bg-block" id="third">
