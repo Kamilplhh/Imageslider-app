@@ -4,15 +4,15 @@
 @section('content')
 <div class="bg-blocks">
     <div class="bg-ON first" id="0">
-        <div class="description-ON">
-            <div class="bordertop-ON"></div>
-            <div class="author-ON">
+        <div class="description-ON" id="description">
+            <div class="bordertop-ON" id="bordertop"></div>
+            <div class="author-ON" id="author">
                 Elizeu Dias • BRASIL
             </div>
-            <div class="place-ON">
+            <div class="place-ON" id="place">
                 <b>RIO DE JANEIRO</b>
             </div>
-            <div class="discover" style="display:flex;">
+            <div class="discover" id="discover" style="display:flex;">
                 <i class="fa-solid fa fa-bookmark"></i>
                 <p>DISCOVER LOCATION</p>
             </div>

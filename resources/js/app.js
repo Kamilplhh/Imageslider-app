@@ -61,32 +61,48 @@ function slider() {
 
     removezero(zero);
 
-    last.insertBefore(zero);
     let full = document.getElementById('0');
 
     display(full);
-    
+
 }
 
 slider();
 
 function removezero(zero) {
-    let description = full.querySelector('#description-ON');
-    let bordertop = document.getElementById('#bordertop-ON');
-    let author = document.getElementById('#author-ON');
-    let place = document.getElementById('#place-ON');
-    let discover = document.getElementById('#discover-ON');
+    let descriptionON = zero.querySelector('#description');
+    let bordertopON = zero.querySelector('#bordertop');
+    let authorON = zero.querySelector('#author');
+    let placeON = zero.querySelector('#place');
+    let discoverON = zero.querySelector('#discover');
 
     zero.id = 4;
     zero.classList.toggle("last");
+
+    zero.classList.toggle("bg-block");
+    zero.classList.remove("bg-ON");
+
+    descriptionON.classList.remove("description-ON");
+    descriptionON.classList.toggle("description");
+
+    bordertopON.classList.remove("bordertop-ON");
+    bordertopON.classList.toggle("bordertop");
+
+    authorON.classList.remove("author-ON");
+    authorON.classList.toggle("author");
+
+    placeON.classList.remove("place-ON");
+    placeON.classList.toggle("place");
+
+    discoverON.style.display = 'none';
 }
 
 function display(full) {
     let description = full.querySelector('#description');
-    let bordertop = document.getElementById('#bordertop');
-    let author = document.getElementById('#author');
-    let place = document.getElementById('#place');
-    let discover = document.getElementById('#discover');
+    let bordertop = full.querySelector('#bordertop');
+    let author = full.querySelector('#author');
+    let place = full.querySelector('#place');
+    let discover = full.querySelector('#discover');
 
     full.classList.toggle("bg-center");
     setTimeout(function () {
