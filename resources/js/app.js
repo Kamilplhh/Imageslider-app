@@ -41,6 +41,7 @@ sunIcon.addEventListener("click", () => {
 
 moonIcon.addEventListener("click", () => {
     themeSwitch();
+    slider();
 });
 
 themeCheck();
@@ -61,6 +62,7 @@ function slider() {
 
     removezero(zero);
 
+    insertAfter(last,zero);
     let full = document.getElementById('0');
 
     display(full);
@@ -95,6 +97,10 @@ function removezero(zero) {
     placeON.classList.toggle("place");
 
     discoverON.style.display = 'none';
+}
+
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
 function display(full) {
