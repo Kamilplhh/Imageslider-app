@@ -36,12 +36,12 @@
     </div>
 
     <div class="bg-block third" id="2">
-        <div class="description">
-            <div class="bordertop"></div>
-            <div class="author">
+        <div class="description" id="description">
+            <div class="bordertop" id="bordertop"></div>
+            <div class="author" id="author">
                 Nick Fewings • DUBIA
             </div>
-            <div class="place">
+            <div class="place" id="place">
                 JUMEIRAH BEACH
             </div>
             <div class="discover" id="discover">
@@ -52,12 +52,12 @@
     </div>
 
     <div class="bg-block fourth" id="3">
-        <div class="description">
-            <div class="bordertop"></div>
-            <div class="author">
+        <div class="description" id="description">
+            <div class="bordertop" id="bordertop"></div>
+            <div class="author" id="author">
                 Izuddin Helmi Adnan • MALAYSIA
             </div>
-            <div class="place">
+            <div class="place" id="place">
                 PENANG FISHERMAN JETTY
             </div>
             <div class="discover" id="discover">
@@ -68,12 +68,12 @@
     </div>
 
     <div class="bg-block fifth last" id="4">
-        <div class="description">
-            <div class="bordertop"></div>
-            <div class="author">
+        <div class="description" id="description">
+            <div class="bordertop" id="bordertop"></div>
+            <div class="author" id="author">
                 Jacob Creswick • WASHINGTON
             </div>
-            <div class="place">
+            <div class="place" id="place">
                 WASHINGTON MONUMENT
             </div>
             <div class="discover" id="discover">

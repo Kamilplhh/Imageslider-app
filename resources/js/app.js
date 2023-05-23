@@ -41,35 +41,30 @@ sunIcon.addEventListener("click", () => {
 
 moonIcon.addEventListener("click", () => {
     themeSwitch();
-    slider();
 });
 
 themeCheck();
 
+setInterval(
+    function slider() {
+        let block = document.querySelectorAll('.bg-block');
+        let zero = document.getElementById('0');
 
+        block.forEach(block => {
+            block.id = block.id - 1;
+            console.log(block);
+        });
 
-function slider() {
-    let block = document.querySelectorAll('.bg-block');
-    let zero = document.getElementById('0');
+        let last = document.getElementById('3');
+        last.classList.remove("last");
 
-    block.forEach(block => {
-        block.id = block.id - 1;
-        console.log(block);
-    });
+        removezero(zero);
 
-    let last = document.getElementById('3');
-    last.classList.remove("last");
+        insertAfter(last, zero);
+        let full = document.getElementById('0');
 
-    removezero(zero);
-
-    insertAfter(last,zero);
-    let full = document.getElementById('0');
-
-    display(full);
-
-}
-
-slider();
+        display(full);
+    }, 8000);
 
 function removezero(zero) {
     let descriptionON = zero.querySelector('#description');
@@ -116,18 +111,20 @@ function display(full) {
         full.classList.remove("bg-block");
         full.classList.toggle("bg-ON");
 
-        description.classList.remove("description");
         description.classList.toggle("description-ON");
+        description.classList.remove("description");
 
-        bordertop.classList.remove("bordertop");
         bordertop.classList.toggle("bordertop-ON");
+        bordertop.classList.remove("bordertop");
 
-        author.classList.remove("author");
         author.classList.toggle("author-ON");
+        author.classList.remove("author");
 
-        place.classList.remove("place");
         place.classList.toggle("place-ON");
+        place.classList.remove("place");
 
         discover.style.display = 'flex';
-    }, 1000);
+    }, 100);
 }
+
+setInterval(slider(), 1000);
