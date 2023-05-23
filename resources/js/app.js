@@ -48,6 +48,11 @@ themeCheck();
 
 const block = document.getElementById("second");
 
+const description = document.getElementById("description");
+const bordertop = document.getElementById("bordertop");
+const author = document.getElementById("author");
+const place = document.getElementById("place");
+const discover = document.getElementById("discover");
 
 function display() {
     block.classList.toggle("bg-center");
@@ -55,5 +60,19 @@ function display() {
         block.classList.remove("bg-center");
         block.classList.remove("bg-block");
         block.classList.toggle("bg-ON");
-      }, 200);
+
+        description.classList.remove("description");
+        description.classList.toggle("description-ON");
+
+        bordertop.classList.remove("bordertop");
+        bordertop.classList.toggle("bordertop-ON");
+
+        author.classList.remove("author");
+        author.classList.toggle("author-ON");
+        
+        place.classList.remove("place");
+        place.classList.toggle("place-ON"); 
+
+        discover.style.display = 'flex';
+      }, 1000);
 }

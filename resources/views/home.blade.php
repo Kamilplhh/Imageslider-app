@@ -20,13 +20,17 @@
     </div>
 
     <div class="bg-block" id="second">
-        <div class="description">
-            <div class="bordertop"></div>
-            <div class="author">
+        <div class="description" id="description">
+            <div class="bordertop" id="bordertop"></div>
+            <div class="author" id="author">
                 Portuguese Gravity • PORTUGAL
             </div>
-            <div class="place">
+            <div class="place" id="place">
                 <b>PADRÃO DOS DESCOBRIMENTOS IN BELÉM</b>
+            </div>
+            <div class="discover" id="discover">
+                <i class="fa-solid fa fa-bookmark"></i>
+                <p>DISCOVER LOCATION</p>
             </div>
         </div>
     </div>
@@ -40,6 +44,10 @@
             <div class="place">
                 JUMEIRAH BEACH
             </div>
+            <div class="discover" id="discover">
+                <i class="fa-solid fa fa-bookmark"></i>
+                <p>DISCOVER LOCATION</p>
+            </div>
         </div>
     </div>
 
@@ -52,6 +60,10 @@
             <div class="place">
                 PENANG FISHERMAN JETTY
             </div>
+            <div class="discover" id="discover">
+                <i class="fa-solid fa fa-bookmark"></i>
+                <p>DISCOVER LOCATION</p>
+            </div>
         </div>
     </div>
 
@@ -63,6 +75,10 @@
             </div>
             <div class="place">
                 WASHINGTON MONUMENT
+            </div>
+            <div class="discover" id="discover">
+                <i class="fa-solid fa fa-bookmark"></i>
+                <p>DISCOVER LOCATION</p>
             </div>
         </div>
     </div>
