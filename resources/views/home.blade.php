@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="bg-blocks">
-    <div class="bg-ON" id="first">
+    <div class="bg-ON first" id="0">
         <div class="description-ON">
             <div class="bordertop-ON"></div>
             <div class="author-ON">
@@ -12,14 +12,14 @@
             <div class="place-ON">
                 <b>RIO DE JANEIRO</b>
             </div>
-            <div class="discover">
+            <div class="discover" style="display:flex;">
                 <i class="fa-solid fa fa-bookmark"></i>
                 <p>DISCOVER LOCATION</p>
             </div>
         </div>
     </div>
 
-    <div class="bg-block" id="second">
+    <div class="bg-block second" id="1">
         <div class="description" id="description">
             <div class="bordertop" id="bordertop"></div>
             <div class="author" id="author">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="bg-block" id="third">
+    <div class="bg-block third" id="2">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="bg-block" id="fourth">
+    <div class="bg-block fourth" id="3">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">
@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <div class="bg-block last" id="fifth">
+    <div class="bg-block fifth last" id="4">
         <div class="description">
             <div class="bordertop"></div>
             <div class="author">

@@ -1,4 +1,4 @@
-import '../css/app.css'; 
+import '../css/app.css';
 import "@fortawesome/fontawesome-free/css/all.css";
 import $ from 'jquery';
 window.$ = $;
@@ -41,25 +41,58 @@ sunIcon.addEventListener("click", () => {
 
 moonIcon.addEventListener("click", () => {
     themeSwitch();
-    display()
 });
 
 themeCheck();
 
-const block = document.getElementById("second");
 
-const description = document.getElementById("description");
-const bordertop = document.getElementById("bordertop");
-const author = document.getElementById("author");
-const place = document.getElementById("place");
-const discover = document.getElementById("discover");
 
-function display() {
-    block.classList.toggle("bg-center");
-    setTimeout(function() {
-        block.classList.remove("bg-center");
-        block.classList.remove("bg-block");
-        block.classList.toggle("bg-ON");
+function slider() {
+    let block = document.querySelectorAll('.bg-block');
+    let zero = document.getElementById('0');
+
+    block.forEach(block => {
+        block.id = block.id - 1;
+        console.log(block);
+    });
+
+    let last = document.getElementById('3');
+    last.classList.remove("last");
+
+    removezero(zero);
+
+    last.insertBefore(zero);
+    let full = document.getElementById('0');
+
+    display(full);
+    
+}
+
+slider();
+
+function removezero(zero) {
+    let description = full.querySelector('#description-ON');
+    let bordertop = document.getElementById('#bordertop-ON');
+    let author = document.getElementById('#author-ON');
+    let place = document.getElementById('#place-ON');
+    let discover = document.getElementById('#discover-ON');
+
+    zero.id = 4;
+    zero.classList.toggle("last");
+}
+
+function display(full) {
+    let description = full.querySelector('#description');
+    let bordertop = document.getElementById('#bordertop');
+    let author = document.getElementById('#author');
+    let place = document.getElementById('#place');
+    let discover = document.getElementById('#discover');
+
+    full.classList.toggle("bg-center");
+    setTimeout(function () {
+        full.classList.remove("bg-center");
+        full.classList.remove("bg-block");
+        full.classList.toggle("bg-ON");
 
         description.classList.remove("description");
         description.classList.toggle("description-ON");
@@ -69,10 +102,10 @@ function display() {
 
         author.classList.remove("author");
         author.classList.toggle("author-ON");
-        
+
         place.classList.remove("place");
-        place.classList.toggle("place-ON"); 
+        place.classList.toggle("place-ON");
 
         discover.style.display = 'flex';
-      }, 1000);
+    }, 1000);
 }

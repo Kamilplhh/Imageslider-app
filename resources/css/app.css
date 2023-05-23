@@ -63,27 +63,27 @@ a:hover {
     margin-right: -4%;
 }
 
-#first {
+.first {
     background-image: url("/images/1.jpg");
     background-size: cover;
 }
 
-#second {
+.second {
     background-image: url("/images/2.jpg");
     background-size: cover;
 }
 
-#third {
+.third {
     background-image: url("/images/3.jpg");
     background-size: cover;
 }
 
-#fourth {
+.fourth {
     background-image: url("/images/4.jpg");
     background-size: cover;
 }
 
-#fifth {
+.fifth {
     background-image: url("/images/5.jpg");
     background-size: cover;
 }
@@ -138,7 +138,7 @@ a:hover {
 .description-ON {
     position: absolute;
     margin-left: 3%;
-    bottom: 30%;
+    top: 50%;
     font-family: 'Anton', sans-serif;
 }
 
