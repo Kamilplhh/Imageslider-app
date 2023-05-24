@@ -1,5 +1,7 @@
 @extends('layouts.master')
 @section('title', '- Home')
+@vite('resources/js/home.js')
+
 
 @section('content')
 <div class="bg-blocks">
@@ -39,10 +41,10 @@
         <div class="description" id="description">
             <div class="bordertop" id="bordertop"></div>
             <div class="author" id="author">
-                Nick Fewings • DUBIA
+                Luke White • Sydney
             </div>
             <div class="place" id="place">
-                JUMEIRAH BEACH
+                Sydney Harbour Bridge
             </div>
             <div class="discover" id="discover">
                 <i class="fa-solid fa fa-bookmark"></i>
@@ -84,18 +86,21 @@
     </div>
 
     <div class="navigation">
-        <div class="circle">
+        <div class="circle" onclick="alert('Function in progress')">
             <i class="fa-solid fa-xl fa-less-than"></i>
         </div>
-        <div class="circle">
+        <div class="circle" onclick="alert('Function in progress')">
             <i class="fa-solid fa-xl fa-greater-than"></i>
         </div>
-        <div class="line"></div>
-        <div class="text">
+        <div class="line">
+        <div class="line-progress"></div>
+        </div>
+        <div id="text">
             01
         </div>
     </div>
 </div>
 
+<div id="loading"></div>
 
 @stop
