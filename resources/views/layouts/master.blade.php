@@ -13,7 +13,7 @@
 
     <div class="block h-100 bg-[#ecfdf3]">
         
-    <div class="navbar dark:bg-[#313131] dark:bg-opacity-30 h-16">
+    <div class="navbar h-16">
         <div class="absolute top-8 right-12">
             <a href="" class="home px-5 text-black dark:text-white ">HOME</a>
             <a href="" class="px-5 text-black dark:text-white">HOLIDAYS</a>

@@ -1,3 +1,5 @@
+import '../css/program.css';
+
 setInterval(
     function slider() {
         let block = document.querySelectorAll('.bg-block');
